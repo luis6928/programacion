@@ -1,16 +1,13 @@
-import java.util.Scanner;
-
-public class Ejercicio2{
-  public static void main(String[] args){
+public class Ejercicio4{
+  public static void main(String[] args)
+  throws InterruptedException {
     
     int[][] array= new int [4][5];
     int fila , columna;
     
     for(fila=0;fila<4;fila++){
       for(columna=0; columna<5;columna++){
-        System.out.print("Introduce un numero entero: ");
-        Scanner s = new Scanner(System.in);
-	      array[fila][columna] = s.nextInt();
+	      array[fila][columna] = (int)(Math.random() * 901)+100;
       }
     }
     
@@ -20,8 +17,10 @@ public class Ejercicio2{
       for(columna = 0; columna < 5; columna++) {
       System.out.printf("%7d ", array[fila][columna]);
       sumaFilas += array[fila][columna];
+      Thread.sleep(100);
       }
-      System.out.printf("|%7d\n", sumaFilas);
+      System.out.printf("%7d\n", sumaFilas);
+      Thread.sleep(500);
       }
 for(columna = 0; columna < 5; columna++) {
   }
@@ -34,9 +33,9 @@ for(columna = 0; columna < 5; columna++) {
   }
   sumaTotal += sumaColumna;
   System.out.printf("%7d ", sumaColumna);
+  Thread.sleep(500);
   }
-  System.out.printf("|%7d ", sumaTotal);
+  System.out.printf("%7d ", sumaTotal);
   }
 }
-  
   

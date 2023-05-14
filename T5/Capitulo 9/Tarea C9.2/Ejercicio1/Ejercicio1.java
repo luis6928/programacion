@@ -17,7 +17,7 @@ public class Ejercicio1 {
     System.out.println("Datos de los gatos: ");
     
     for (i = 0; i < 4; i++) {
-      System.out.println("Gato nº" + i);
+      System.out.println("Gato " + i);
       System.out.println("Nombre: " + array[i].getNombre());
       System.out.println("Peso: " + array[i].getPeso()+" kg");
       System.out.println("Raza: " + array[i].getRaza());
